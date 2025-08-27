@@ -9,3 +9,168 @@
     
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlow - Music App</title>
+    <!-- TailwindCSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="h-full bg-gray-900 text-white font-sans">
+    <div class="flex h-full">
+        
+        <!-- Sidebar -->
+        <aside class="w-64 bg-black p-6 flex flex-col">
+            <h1 class="text-2xl font-bold text-purple-400 mb-8">StreamFlow</h1>
+            
+            <!-- Main navigation -->
+            <nav class="flex-1">
+                <ul class="space-y-4">
+                    <li><a href="#" class="flex items-center space-x-3 text-white hover:text-purple-400">
+                        <i class="fas fa-home"></i> <span>Home</span>
+                    </a></li>
+                    <li><a href="#" class="flex items-center space-x-3 text-gray-400 hover:text-purple-400">
+                        <i class="fas fa-search"></i> <span>Search</span>
+                    </a></li>
+                    <li><a href="#" class="flex items-center space-x-3 text-gray-400 hover:text-purple-400">
+                        <i class="fas fa-book"></i> <span>Your Library</span>
+                    </a></li>
+                </ul>
+
+                <!-- Playlist list -->
+                <div class="mt-8">
+                    <h3 class="text-gray-400 text-sm font-semibold uppercase mb-4">Playlists</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Liked Songs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">My Playlist #1</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Chill Vibes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Workout Mix</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main content area -->
+        <main class="flex-1 flex flex-col">
+            
+            <!-- Header -->
+            <header class="bg-gray-800 p-4 flex items-center justify-between">
+                <!-- Back/forward buttons -->
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 bg-gray-700 rounded-full hover:bg-gray-600"><i class="fas fa-chevron-left"></i></button>
+                    <button class="p-2 bg-gray-700 rounded-full hover:bg-gray-600"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Search bar -->
+                <div class="flex-1 max-w-md mx-8 relative">
+                    <input type="text" placeholder="Search for songs, artists, or albums"
+                        class="w-full bg-gray-700 text-white rounded-full py-2 px-4 pl-10 focus:ring-2 focus:ring-purple-400">
+                    <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                </div>
+
+                <!-- User actions -->
+                <div class="flex items-center space-x-4">
+                    <button class="hover:bg-gray-700 p-2 rounded-full"><i class="fas fa-bell"></i></button>
+                    <div class="w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center">
+                        <span class="text-sm font-semibold text-black">JD</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Scrollable content area -->
+            <div class="flex-1 overflow-y-auto p-6">
+                
+                <!-- Greeting section -->
+                <section class="mb-8">
+                    <h2 class="text-3xl font-bold mb-6">Good evening</h2>
+                    <div class="grid grid-cols-3 gap-4">
+                        <!-- Playlist tiles -->
+                        <div class="bg-gray-800 p-4 flex items-center space-x-4 hover:bg-gray-700 rounded-lg cursor-pointer">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Liked Songs" class="w-15 h-15 rounded">
+                            <span class="font-semibold">Liked Songs</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 flex items-center space-x-4 hover:bg-gray-700 rounded-lg cursor-pointer">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Chill Vibes" class="w-15 h-15 rounded">
+                            <span class="font-semibold">Chill Vibes</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 flex items-center space-x-4 hover:bg-gray-700 rounded-lg cursor-pointer">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Workout Mix" class="w-15 h-15 rounded">
+                            <span class="font-semibold">Workout Mix</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recently Played -->
+                <section class="mb-8">
+                    <h3 class="text-2xl font-bold mb-4">Recently played</h3>
+                    <div class="grid grid-cols-5 gap-4">
+                        <!-- Each album card -->
+                        <div class="bg-gray-800 p-4 hover:bg-gray-700 rounded-lg cursor-pointer">
+                            <img src="/placeholder.svg?height=160&width=160" class="w-full rounded-lg mb-4">
+                            <h4 class="font-semibold truncate">Midnight Dreams</h4>
+                            <p class="text-gray-400 text-sm truncate">Electronic Vibes</p>
+                        </div>
+                        <!-- Repeated for other albums -->
+                        <!-- ... (Indie, Jazz, Pop, Hip Hop) ... -->
+                    </div>
+                </section>
+
+                <!-- Song Queue -->
+                <section>
+                    <h3 class="text-2xl font-bold mb-4">Queue</h3>
+                    <div class="bg-gray-800 rounded-lg">
+                        <!-- Header Row -->
+                        <div class="p-4 border-b border-gray-700 text-sm text-gray-400 flex justify-between">
+                            <span>#</span>
+                            <span class="flex-1 ml-4">Title</span>
+                            <span class="w-20">Album</span>
+                            <span class="w-16">Duration</span>
+                        </div>
+
+                        <!-- Songs in queue -->
+                        <div class="divide-y divide-gray-700">
+                            <!-- Song item -->
+                            <div class="p-4 hover:bg-gray-700 cursor-pointer flex items-center">
+                                <span class="w-4 text-sm text-gray-400">1</span>
+                                <img src="/placeholder.svg?height=40&width=40" class="w-10 h-10 rounded ml-4">
+                                <div class="flex-1 ml-4">
+                                    <p class="font-semibold">Blinding Lights</p>
+                                    <p class="text-gray-400 text-sm">The Weeknd</p>
+                                </div>
+                                <span class="w-20 text-gray-400 text-sm">After Hours</span>
+                                <span class="w-16 text-gray-400 text-sm">3:20</span>
+                            </div>
+                            <!-- More songs (Watermelon Sugar, Levitating) -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Music Player at bottom -->
+    <footer class="bg-gray-800 border-t border-gray-700 p-4">
+        <div class="flex items-center justify-between">
+            <!-- Left: Current song info -->
+            <div class="flex items-center space-x-4 w-1/4">
+                <img src="/placeholder.svg?height=56&width=56" class="w-14 h-14 rounded">
+                <div>
+                    <p class="font-semibold">Blinding Lights</p>
+                    <p class="text-gray-400 text-sm">The Weeknd</p>
+                </div>
+                <button class="text-gray-400 hover:text-white"><i class="far fa-heart"></i></button>
+            </div>
+
+            <!-- Center: Playback controls -->
+            <div class="flex flex-col items-center w-1/2">
+                <div class="flex items-center space-x-6 mb-2">
+                    <button class="text-gray-400 hover:text-white"><i class="fas fa-random"></i></button>
+                    <button class="text-gray-400 hover:text-white"><i class="fas fa-step-backward"></i></button>
+                    <button class="bg-white text-black w-10 h-10 rounded-full flex items-center justify-center hover:
+
+
+

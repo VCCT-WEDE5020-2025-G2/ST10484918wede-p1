@@ -9,3 +9,160 @@
     
 </body>
 </html>
+<UL>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</UL>
+<h1>Enquiry Form</h1>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - StreamFlow Music</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="h-full bg-gray-900 text-white font-sans">
+  <div class="flex h-full">
+
+    <!-- Left Sidebar -->
+    <aside class="w-64 bg-black p-6 flex flex-col">
+      <div class="mb-8">
+        <h1 class="text-2xl font-bold text-purple-400">StreamFlow</h1>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="flex-1">
+        <ul class="space-y-4">
+          <li><a href="index.html" class="flex items-center space-x-3 text-gray-400 hover:text-purple-400"><i class="fas fa-home w-5"></i><span>Home</span></a></li>
+          <li><a href="#" class="flex items-center space-x-3 text-gray-400 hover:text-purple-400"><i class="fas fa-search w-5"></i><span>Search</span></a></li>
+          <li><a href="#" class="flex items-center space-x-3 text-gray-400 hover:text-purple-400"><i class="fas fa-book w-5"></i><span>Library</span></a></li>
+          <li><a href="services.html" class="flex items-center space-x-3 text-gray-400 hover:text-purple-400"><i class="fas fa-cog w-5"></i><span>Services</span></a></li>
+          <li><a href="about.html" class="flex items-center space-x-3 text-gray-400 hover:text-purple-400"><i class="fas fa-info-circle w-5"></i><span>About</span></a></li>
+          <li><a href="contact.html" class="flex items-center space-x-3 text-gray-400 hover:text-purple-400"><i class="fas fa-envelope w-5"></i><span>Contact</span></a></li>
+          <li><a href="enquiry.html" class="flex items-center space-x-3 text-white hover:text-purple-400"><i class="fas fa-question-circle w-5"></i><span>Enquiry</span></a></li>
+        </ul>
+
+        <!-- Playlist Section -->
+        <div class="mt-8">
+          <h3 class="text-gray-400 text-sm font-semibold mb-4 uppercase tracking-wider">Your Playlists</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">Liked Songs</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">My Playlist #1</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Chill Vibes</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Workout Mix</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Right Main Area -->
+    <main class="flex-1 flex flex-col">
+
+      <!-- Top Header Bar -->
+      <header class="bg-gray-800 p-4 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+          <button class="p-2 rounded-full bg-gray-700 hover:bg-gray-600"><i class="fas fa-chevron-left"></i></button>
+          <button class="p-2 rounded-full bg-gray-700 hover:bg-gray-600"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="flex-1 max-w-md mx-8">
+          <div class="relative">
+            <input type="text" placeholder="Search music..." class="w-full bg-gray-700 text-white placeholder-gray-400 rounded-full py-2 px-4 pl-10 focus:ring-2 focus:ring-purple-400">
+            <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <button class="p-2 rounded-full hover:bg-gray-700"><i class="fas fa-bell"></i></button>
+          <div class="w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center"><span class="text-sm font-semibold text-black">JD</span></div>
+        </div>
+      </header>
+
+      <!-- Main Page Content -->
+      <div class="flex-1 overflow-y-auto p-6">
+
+        <!-- Enquiry Form -->
+        <section class="mb-8">
+          <h2 class="text-3xl font-bold mb-6">Ask a Question</h2>
+          <p class="text-gray-400 mb-8">Need help or have a question? Fill out the form and we'll respond shortly.</p>
+
+          <div class="bg-gray-800 rounded-lg p-8 max-w-2xl">
+            <form class="space-y-6">
+              <div class="grid grid-cols-2 gap-6">
+                <div>
+                  <label for="firstName" class="block text-sm font-semibold mb-2">First Name</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="Your first name" class="w-full bg-gray-700 text-white rounded-lg py-3 px-4 focus:ring-2 focus:ring-purple-400">
+                </div>
+                <div>
+                  <label for="lastName" class="block text-sm font-semibold mb-2">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Your last name" class="w-full bg-gray-700 text-white rounded-lg py-3 px-4 focus:ring-2 focus:ring-purple-400">
+                </div>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" class="w-full bg-gray-700 text-white rounded-lg py-3 px-4 focus:ring-2 focus:ring-purple-400">
+              </div>
+
+              <div>
+                <label for="subject" class="block text-sm font-semibold mb-2">Topic</label>
+                <select id="subject" name="subject" class="w-full bg-gray-700 text-white rounded-lg py-3 px-4 focus:ring-2 focus:ring-purple-400">
+                  <option value="">Choose a topic</option>
+                  <option value="subscription">Subscription</option>
+                  <option value="technical">Technical Help</option>
+                  <option value="billing">Billing</option>
+                  <option value="features">Feature Suggestion</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-semibold mb-2">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message here..." class="w-full bg-gray-700 text-white rounded-lg py-3 px-4 focus:ring-2 focus:ring-purple-400"></textarea>
+              </div>
+
+              <button type="submit" class="bg-purple-400 hover:bg-purple-500 text-black font-semibold py-3 px-8 rounded-lg">Send</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section>
+          <h3 class="text-2xl font-bold mb-6">Common Questions</h3>
+          <div class="space-y-4">
+            <div class="bg-gray-800 rounded-lg p-6">
+              <h4 class="font-semibold mb-2">How do I cancel my subscription?</h4>
+              <p class="text-gray-400">Go to your account settings > Subscription > Cancel Plan.</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-6">
+              <h4 class="font-semibold mb-2">Can I listen offline?</h4>
+              <p class="text-gray-400">Yes, Premium users can download music to play offline on up to 5 devices.</p>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-6">
+              <h4 class="font-semibold mb-2">What audio quality do you offer?</h4>
+              <p class="text-gray-400">We support 96 kbps (Normal), 160 kbps (High), and 320 kbps (Very High) for Premium users.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Music Player Footer -->
+
